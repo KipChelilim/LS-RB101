@@ -1,0 +1,165 @@
+## a method that returns the sum of two integers
+  
+  # pseudo code
+    take two integers
+    add them together
+    print the result
+    
+  # formal pseudo code (assume they're not provided by user input)
+    START
+    
+    GET number1
+    GET number 2
+      
+    SET result = number1 + number2
+    
+    PRINT result
+    
+    END
+    
+  # code (ignoring print messages for brevity)
+  
+    def addition(num1, num2)
+              
+      result = num1 + num2
+      
+      puts result
+    end
+
+## a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+  # pseudo code
+    
+    take an existing array of strings
+    concatenate all elements in array
+    display the result
+    
+  # formal pseudo code
+  
+    START
+    
+    SET joined_string = concatenation of existing array
+    OUTPUT joined_string
+    
+    END
+    
+  # code
+    
+    def text_join(array)
+      array.join()
+    end
+
+## a method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element.
+
+ # pseudo code
+ 
+  take a list
+  iterate through the list one by one
+    -save the first item in a new list
+    -move to the next item in the list
+    -for every iteration check the position of the current item
+    -if the current item is immediately after the last saved item
+      -move on to the next item in the list
+    -otherwise, save the current item in the new list
+  
+  after iterating, return the new list
+  
+  # formal pseudo code
+  
+    START
+    
+    # Given a list of integers
+    
+    SET new_list = []
+    
+    FOR EACH item in the list
+      READ position of item
+      IF position of item == 0
+        STORE item in new_list
+      ELSE IF position of item is odd
+        STORE item in new_list
+      ELSE
+        go to next item in list
+    END
+    
+    END
+    
+## a method that determines the index of the 3rd occurrence of a given character
+## in a string. For instance, if the given character is 'x' and the string is
+## 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given
+## character does not occur at least 3 times, return nil.
+
+  # pseudo code
+
+  take a string
+  split string into a collection
+  iterate over the string one by one
+  for each iteration
+    -check if the character matches the search value
+    -if the character matches
+      -store the current index
+      -increase a counter by one
+      -check if the counter equals three
+      -if it does
+        return the current index
+      -otherwise, continue
+    -otherwise, continue
+  after iterating, return nil
+  
+  # formal pseudo code
+  
+  START
+  
+  # Given a string and search_value
+  
+  SET counter = 0
+  SET index = 0
+  SET characters = string split at each character without white space
+  
+  FOR EACH character in characters
+    IF character == search_value
+      SET index = character.index
+      SET counter = counter + 1
+      RETURN index if counter = 3
+    ELSE
+      CONTINUE
+  
+  RETURN nil
+  
+  END
+  
+## a method that takes two arrays of numbers and returns the result of merging
+## the arrays. The elements of the first array should become the elements at the
+## even indexes of the returned array, while the elements of the second array
+## should become the elements at the odd indexes.
+
+  #pseudo code
+  
+  create a new empty array
+  take two existing arrays
+  get the size of the arrays
+  iterate 'n' times, where 'n' is the size of one of the existing arrays
+  for each iteration
+    take the next value from the 2nd array and store it in the new array
+    take the next value from the 1st array and store it in the new array
+  after iterating return the new array
+  
+  #formal pseudo code
+  
+  START
+  
+  # given two existing arrays
+  
+  SET new_array = an empty array
+  SET stopping_point = size existing array 1
+  SET index = 0
+  
+  WHILE index < stopping_point
+    STORE index of existing array 1 in new array
+    STORE index of existing array 2 in new array
+    
+    SET index = index + 1
+    
+  RETURN new_array
+  
+  END
