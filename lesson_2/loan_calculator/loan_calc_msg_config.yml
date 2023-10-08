@@ -1,0 +1,8 @@
+msg_welcome: "Hello world! Welcome to the Loan Calculator!"
+msg_enter_principal: "Enter your loan amount:"
+msg_enter_duration: "Enter the length of the loan (in years):"
+msg_enter_apr: "Enter the interest rate (use the ANNUAL rate as a %):"
+msg_invalid_num: "That doesn't look right..."
+msg_results: "Your monthly payment will be "
+msg_continue: "Would you like to continue? (Y to start over)"
+msg_goodbye: "Thanks for using the Loan Calculator. Goodbye!"

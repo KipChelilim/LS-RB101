@@ -1,0 +1,28 @@
+# Message prompt method, messages, and related variables
+# From short research, need to declare these in a module to make them available
+# Since they do not inherently have global scope through require_relative method
+# Should wait until object oriented course, unless there's a simpler example
+# Update: There was a simpler way. YAML
+
+# Prompt method - try this after OOP course
+# def prompt(message)
+#   puts "=> #{message}"
+# end
+
+# Message prompts
+msg_welcome: "Welcome to Calculator! Enter your name:"
+msg_valid_name: "Make sure to use a valid name."
+msg_first_num: "What's the first number?"
+msg_invalid_num: "Hmm... that doesnt' look like a valid number."
+msg_second_num: "What's the second number?"
+
+operator_prompt: "What operation would you like to perform?\n
+    1) add\n
+    2) subtract\n
+    3) multiply\n
+    4) divide"
+
+msg_invalid_operator: "Must choose 1, 2, 3, or 4."
+
+msg_continue: "Do you want to perform another calculation? (Y to calculate again)"
+msg_end: "Thank you for using the calculator. Good bye!"

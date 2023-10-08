@@ -3,6 +3,7 @@
 # perform the operation
 # output the result
 
+# Start of code
 puts ">> Welcome to Calculator!"
 
 puts ">> What's the first number?"
