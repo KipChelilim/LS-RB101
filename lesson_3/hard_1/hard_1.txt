@@ -1,0 +1,18 @@
+# Question 1: an error as the false prevents greeting from being initialized
+~ wrong: local variable will still be initialized, just not assigned the value;
+~     gets assigned nil
+
+# Question 2: should print the hash object, nothing in the code modifies it (and
+              puts does not print each element like it does for an array)
+~ wrong: informal_greeting is passed the reference to the actual object, not a
+~     copy (i.e. the object id of the #[] call and informal greeting is
+~     the same). Need to remember that calling a value with #[] is not passing a
+~     new string, it's passing the reference. Documentations says "Returns the
+~     value..." -> the HASH VALUE (i.e. object), not just the contents.
+
+# Question 3:
+              a: no changes to variables
+              b: no changes to variables
+              c: one, two , three -> two, three, one (! version of gsub)
+
+# Question 4: see hard_1/question_4.rb

@@ -1,0 +1,25 @@
+# Question  1: ages.include?('Spot')
+  other methods:
+    check if nil: #[], #filter, #slice
+    aliases for #include?: #has_key?, #member?, #key?
+
+# Question  2:
+  munsters_description.swapcase
+  munsters_description.capitalize
+  munsters_description.downcase
+  munsters_description.upcase
+
+# Question  3: ages.merge(additional_ages)
+~ question said EXISTING hash - need destructive version
+
+# Question  4: advice.match?(/\Wdino\W/)
+# Question  5: %w(Fred Barney Wilma Betty BamBam Pebbles)
+# Question  6: flintsontes << "Dino"
+# Question  7: flintstones.merge(%w(Dino Hoppy))
+~ merge is a hash method, not arrays; need concat or push with multiple arg.
+
+# Question  8: advice.slice!(0..38)
+        bonus: split does not mutate the caller
+
+# Question  9: statement.count("t")
+# Question 10: title.center(40)

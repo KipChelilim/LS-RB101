@@ -1,0 +1,39 @@
+# Question 1: [1, 2, 3]
+  wrong - pay attention to the variable being called, and lack of ! on .uniq
+  also, remember puts does not print the array object, it prints its elements
+
+
+# Question 2:
+  ! is used with booleans to denote "not" (e.g. !true returns false
+  ? is used within a ternary if to separate boolean evaluation with the output
+    for true & false conditions (true ? "do this if true" : "do this if false")
+  
+  1) Not equals, used when comparing two values
+  2) Evaluates truthiness of user_name then negates it. Unless user_name is 
+     false or nil, this will return false
+
+  3) When used after the .uniq method, turns it into destructive method which
+     will mutate the caller
+
+  4) See above for description of ternary if
+  5) See above for description of ternary if
+  6) See #2. Converts user_name into a boolean based on it's truthiness; because
+     of the"double negative" - flips boolean result of user_name twice, theres
+     no effect after the boolean conversion of user_name
+
+# Question 3: advice.sub('important','urgent')
+
+# Question 4:
+    Both mutate the caller
+    delete_at() deletes based on position of the provided argument
+    delete() removes the character provided as an argument
+
+# Question 5:
+  using range (1..100).include?(42)
+
+# Question 6: 
+  using a method: famous_words.unshift("Four score and ")
+  string concatenation: famous_words = "Four score and " + famous_words
+
+# Question 7: flintstones.flatten
+# Question 8: flintsones.assoc("Barney")

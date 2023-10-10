@@ -1,0 +1,22 @@
+# Question 1: a and c will be the same (a's reference was passed to c) while b
+              b will be different as it was assigned to a different string
+              object (though both objects have the same characters)
+
+# Question 2: all three will be the same. similar to above for a & c, but nuance
+              is that integers (all numerics?) have the same object ids even
+              when used in separate instances
+              
+~ correct, additional nuance: this is an attribute of objects being immutable;
+~   will get the same behavior for true, false, and nil
+
+# Question 3: arg_one will be unchanged (#+ method does not mutate the caller)
+              arg_two will be changed, << mutates the caller
+
+# Question 4: my_string is the same as arg_two in Q3, while the array is
+              is unchanged (variable assignment does not impact outer scope)
+
+# Question 5: see medium_2/question_5.rb
+
+# Question 6: see medium_2/question_6.rb
+~ could have simplifed even further ot just let the OR evaluation return
+    true/false

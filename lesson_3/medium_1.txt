@@ -1,0 +1,29 @@
+# Question 1: 10.times { |i| puts ((" " * i) + ("The Flintstones Rock!")) }
+# Question 2: Can't concatenate string and integers.
+              can either convert 40 + 2 to string ( (40 + 2).to_s )
+              or use string interpolation "the value of 40 + 2 is #{(40 + 2)}"
+
+# Question 3: use a while loop with condition divisor > 0
+     bonus 1: checks if the each divisor divides evenly into the input (no
+              remainder after division), the criteria for being a factor 
+     bonus 2: returns the array containing factors since the last operation does
+              not return the desired output
+
+# Question 4: option 1 mutates the caller and will affect object outside method
+              scope, return value is irrelevant as you can use the original
+              variable after the method call (should be renamed to make this
+              clear)
+
+              option 2 will concatenate the new element and return a new array,
+              requiring code to print or assign the return value of the method
+              call in order to use the updated array (same naming comment)
+
+# Question 5: method can't access the limit variable in the outer scope; need
+              to pass it in as an argument or declare it as a global variable
+
+# Question 6: 34 - variable assignment does not mutate the caller
+# Question 7: Yes, the #[]= method will mutate the caller - assignment of
+              collection values aren't limited to method scope
+
+# Question 8: paper
+# Question 9: no
